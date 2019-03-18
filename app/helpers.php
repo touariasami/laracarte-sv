@@ -6,7 +6,7 @@
  */
 function page_title($title){
 
-    $base_title = 'Laracarte - Les artisans';
+    $base_title = config('app.name') .' - Les artisans';
 
     if ( $title === '' ){
 
@@ -25,6 +25,6 @@ function page_title($title){
  */
 function set_active_route($route){
 
-    return Route::is($route) ? 'active' : '';
+    return (Route::is($route)) ? 'active' : '';
 
-    }
+}

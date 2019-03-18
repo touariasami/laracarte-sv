@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-static-top" style="margin-bottom: 40px">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('home') }}">Laracarte</a>
+        <a class="navbar-brand" href="{{ route('home') }}">{{ config('app.name') }}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -10,7 +10,7 @@
                 <li class="nav-item {{ set_active_route('home') }}">
                     <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item }}">
+                <li class="nav-item  {{ set_active_route('about') }} }}">
                     <a class="nav-link" href="{{ route('about') }}">About</a>
                 </li>
                 <li class="nav-item ">
