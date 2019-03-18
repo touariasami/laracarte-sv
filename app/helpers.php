@@ -1,6 +1,9 @@
 <?php
 
 
+/**
+ * @param $title
+ */
 function page_title($title){
 
     $base_title = 'Laracarte - Les artisans';
@@ -15,3 +18,13 @@ function page_title($title){
 
     }
 }
+
+
+/**
+ * @param $route
+ */
+function set_active_route($route){
+
+    return Route::is($route) ? 'active' : '';
+
+    }

@@ -7,13 +7,13 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item {{ set_active_route('home') }}">
                     <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item }}">
                     <a class="nav-link" href="{{ route('about') }}">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link" href="#">Artisans</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -27,7 +27,7 @@
                         <a class="dropdown-item" href="https://larachat.co">Larachat</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{ set_active_route(route('home')) }}">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
