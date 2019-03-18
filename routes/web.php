@@ -24,3 +24,7 @@ Route::get('/about', [
     'uses' => 'PagesController@about'
 
 ]);
+
+
+Route::get('contact' ,'MessagesController@create')->name('contact');
+Route::post('contact' ,'MessagesController@store')->name('contact.store');
